@@ -1,0 +1,355 @@
+body.internal-page {
+  padding-top: 120px;   /* اگر زیاد بود بعداً می‌تونیم مثلاً 100ش کنیم */
+}
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px !important;
+    border-radius: 16px;
+    padding: 0.5rem !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+
+}
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 500 ;
+    color: #009970 !important;
+}
+
+.login-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: #00b383;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    font-weight: 500 !important;
+    color: #666777;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media (min-width: 992px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width:0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+
+    }
+}
+
+.hero-section{
+    background: url(../photo-bff/pano-01_2020-04-01_NW-Fakultaet_aussen-Eingang-Architektur_Panorama_LC-scaled.jpg) no-repeat center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+
+}
+.hero-section h1 {
+    font-size: 1.5em;
+}
+
+.hero-section h2 {
+    font-size: 1.2em;
+}
+
+
+
+.conference-title {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.conference-title .ordinal {
+  font-size: 0.5em;
+  vertical-align: super;
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.conference-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+.conference-intro {
+  max-width: 720px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 0.2px;
+}
+
+.conference-info {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.info-item h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  color: #009970;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.info-item::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #009970;
+  margin: 0 auto 1rem;
+  opacity: 0.7;
+}
+
+.calendar-link {
+  text-decoration: none;
+  color: #009970;
+}
+
+.calendar-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Venue page hero */
+.page-hero {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 24px 24px;  
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.55)
+    ),
+    url("../photo-bff/DSC0287_2016-04-04_Architektur-innen-NW_LC_WEB-scaled.jpg") center/cover no-repeat;
+}
+
+
+
+
+
+.page-title{
+  font-size: 1.7rem;   
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.page-subtitle{
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Cards */
+.info-card{
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Section headings */
+.section-title{
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #009970;
+  margin-bottom: 0.75rem;
+}
+
+.mini-title{
+  font-size: 1rem;
+  font-weight: 650;
+  margin-bottom: 0.5rem;
+}
+
+.clean-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.clean-list li{
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.clean-list li:last-child{
+  border-bottom: none;
+}
+
+.committee-card{
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  position: relative;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.committee-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.10);
+}
+
+.member-name{
+  font-size: 1.1rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.member-affiliation{
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.member-role{
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,153,112,0.10);
+  color: #009970;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.member-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.member-link:hover .member-name {
+  color: #009970;
+  text-decoration: underline;
+}
+
+.external-icon {
+  font-size: 0.7em;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+.external-link {
+  color: #009970;
+  text-decoration: none;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
+.program-day {
+  padding: 16px 0 0;
+}
+
+.program-day-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.registration-status {
+  background-color: rgba(0, 153, 112, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+
+
+.site-footer {
+  background: #0f1f1a;
+  color: #f8f9fa;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+

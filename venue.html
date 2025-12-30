@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue | 10th BFF Conference</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="internal-page">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="#">Logo</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="conference.html">Conference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="committee.html">Committee</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="registration.html" class="login-button">Registration</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container text-white text-center">
+      <h1 class="page-title">Venue</h1>
+      <p class="page-subtitle mb-0">
+        NaWi – University of Salzburg · Lecture Hall 402 (Blue Auditorium)
+      </p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Quick facts -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="info-card h-100">
+            <h2 class="section-title">Address</h2>
+            <p class="mb-2">
+              NaWi (University of Salzburg)<br>
+              Hellbrunner Str. 34<br>
+              5020 Salzburg, Austria
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mt-3">
+              <!-- Replace query with exact pin later if you want -->
+              <a class="btn btn-outline-success"
+                 target="_blank"
+                 href="https://www.google.com/maps/search/?api=1&query=NaWi+University+of+Salzburg+Hellbrunner+Str.+34+Salzburg">
+                Open in Google Maps
+              </a>
+
+              <!-- Official venue page (adjust URL if you have a better official page) -->
+              <a class="btn btn-outline-dark"
+                 target="_blank"
+                 href="https://www.plus.ac.at/">
+                University Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card h-100">
+            <h2 class="section-title">On-site Details</h2>
+            <ul class="clean-list mb-0">
+              <li><strong>Building:</strong> NaWi (University of Salzburg)</li>
+              <li><strong>Room:</strong> Lecture Hall 402</li>
+              <li><strong>Auditorium:</strong> “Blue Auditorium”</li>
+              <li><strong>Dates:</strong> July 10–11, 2026</li>
+            </ul>
+            <p class="text-muted mt-3 mb-0">
+              More navigation details (entrances, signage) can be added closer to the conference.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="mb-5">
+      <div class="info-card">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+          <h2 class="section-title mb-0">Map</h2>
+          <small class="text-muted">If the embed doesn’t load, use “Open in Google Maps”.</small>
+        </div>
+
+        <!-- Easiest “embed”: use a maps iframe with a query.
+             If you want a perfect pin, generate an embed link from Google Maps (Share → Embed). -->
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe
+            src="https://www.google.com/maps?q=NaWi%20University%20of%20Salzburg%20Hellbrunner%20Str.%2034%20Salzburg&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="NaWi – University of Salzburg map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting there -->
+    <!-- Getting there -->
+<section class="mb-5">
+  <div class="info-card">
+    <h2 class="section-title">Getting there</h2>
+
+    <div class="row g-4 mt-1">
+
+      <!-- Public transport -->
+      <div class="col-md-4">
+        <h3 class="mini-title">Public transport</h3>
+        <p class="mb-2">
+          Public transport is the recommended way to reach the NaWi building.
+          The venue is served by several city bus lines with stops within
+          walking distance.
+        </p>
+        <p class="mb-0">
+          You can use the following link to plan your trip via Google Maps:
+          <br>
+          <a href="https://www.google.com/maps/dir/Salzburg+Hbf,+S%C3%BCdtiroler+Platz+1,+5020+Salzburg/NaWi,+Hellbrunner+Str.+34,+5020+Salzburg"
+             target="_blank"
+             class="external-link">
+            Route to NaWi on Google Maps
+          </a>
+        </p>
+      </div>
+
+      <!-- From Salzburg Hbf -->
+      <div class="col-md-4">
+        <h3 class="mini-title">From Salzburg Hbf (Main Station)</h3>
+        <p class="mb-2">
+          From Salzburg Central Station, the NaWi building can typically be
+          reached in about 15–25 minutes using public transport, depending on
+          the chosen connection.
+        </p>
+        <p class="mb-0">
+          Common options include taking a city bus towards the south of
+          Salzburg and getting off at a stop near Hellbrunner Straße, followed
+          by a short walk (approximately 5–10 minutes) to the NaWi building.
+          Exact routes and schedules may vary, so we recommend checking
+          current connections via:
+          <br>
+          <a href="https://www.google.com/maps/dir/Salzburg+Hbf,+S%C3%BCdtiroler+Platz+1,+5020+Salzburg/NaWi,+Hellbrunner+Str.+34,+5020+Salzburg"
+             target="_blank"
+             class="external-link">
+            Salzburg Hbf → NaWi (Google Maps directions)
+          </a>
+        </p>
+      </div>
+
+      <!-- By car & accessibility -->
+      <div class="col-md-4">
+        <h3 class="mini-title">By car & accessibility</h3>
+        <p class="mb-2">
+          The NaWi building can be accessed by car via Hellbrunner Straße
+          (Hellbrunner Str. 34, 5020 Salzburg). Parking directly at the
+          building and in the surrounding area is limited, and availability
+          may vary during the conference days.
+        </p>
+        <p class="mb-0">
+          The NaWi building is equipped with step-free access at the main
+          entrance and elevators inside the building, providing barrier-free
+          access to lecture halls such as Lecture Hall 402 (“Blue Auditorium”).
+          Further accessibility details can be provided on request.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Accessibility -->
+    <section class="mb-5">
+      <div class="info-card">
+        <h2 class="section-title">Accessibility</h2>
+        <p class="mb-0">
+          Add official accessibility information once confirmed (step-free access, elevators, accessible restrooms).
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center">
+      <div class="info-card">
+        <h2 class="section-title">Questions?</h2>
+        <p class="mb-3">
+          For venue-related questions, you can contact the organizers. (Add an email address later.)
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITx"
+          crossorigin="anonymous"></script>
+
+  <!-- Footer Start -->
+
+<footer class="site-footer mt-5">
+  <div class="container py-3 text-center">
+
+    <p class="footer-copy mb-0">
+    Draft website prepared for internal review
+    </p>
+
+  </div>
+</footer>
+
+<!-- Footer End -->        
+</body>
+</html>
