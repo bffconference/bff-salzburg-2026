@@ -1,252 +1,406 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Program | 10th BFF Conference</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-<nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="https://imstat.org/" target="_blank" rel="noopener">
-      <img src="images/ims-logo.png" style="height: 40px;" alt="IMS">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
-      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="program.html" class="nav-link">Program</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="accommodation.html" class="nav-link">Accommodation</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="venue.html" class="nav-link">Venue</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="partners.html" class="nav-link">Partners</a>
-        </li>
-
-        <!-- ✅ Dropdown as a real nav item -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-cta-dd"
-             href="#"
-             role="button"
-             data-bs-toggle="dropdown"
-             data-bs-display="static"
-             aria-expanded="false">
-            Registration &amp; Submission
-          </a>
-
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a class="dropdown-item"
-                 href="https://imstat.org/shop/2026-ims-annual-meeting/"
-                 target="_blank" rel="noopener">
-                Registration
-              </a>
+<body class="internal-page">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="#">Logo</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="index.html">Home</a>
             </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="#"
-                 onclick="event.preventDefault(); showInvitedInfo();">
-                Invited talk submission
-              </a>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="conference.html">Conference</a>
             </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
-                 target="_blank" rel="noopener">
-                Contributed talk submission
-              </a>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="committee.html">Committee</a>
             </li>
           </ul>
-        </li>
-
-      </ul>
+        </div>
+      </div>
+      <a href="registration.html" class="login-button">Registration</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-  </div>
-</nav>
+  </nav>
 
-    
-    <section class="bg-light">
-      <div class="container-fluid">
-          <div class="d-sm-flex">
-              <img class="img-fluid" src="images/Salzach_Festung_bruecken (2).jpg" alt="Festung_Salzach1">
+  <!-- Page hero -->
+  <header class="page-hero">
+    <div class="container text-white text-center">
+      <h1 class="page-title">Program</h1>
+      <p class="page-subtitle mb-0">
+        10th BFF Conference · Salzburg · July 10–11, 2026
+      </p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Overview -->
+    <section class="mb-5">
+      <div class="info-card">
+        <h2 class="section-title">Overview</h2>
+        <p class="mb-3">
+          The scientific program of the 10th BFF Conference will include a keynote lecture by <a href="https://www.statslab.cam.ac.uk//~rjs57/" target="_blank" class="external-link">Richard Samworth</a>, as well as several invited talks on Bayesian, Fiducial, and Frequentist approaches. All in one room - no parallel sessions.
+
+        </p>
+      </div>
+    </section>
+
+    <!-- Tentative structure -->
+    <section class="mb-5">
+      <div class="info-card">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <h2 class="section-title mb-0">Tentative daily structure</h2>
+          <small class="text-muted">Preliminary – subject to change</small>
+        </div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <div class="program-day h-100">
+              <h3 class="program-day-title">Day 1 – Friday, July 10, 2026</h3>
+              <ul class="clean-list mb-0">
+                <li>Welcome and opening remarks</li>
+                <li>Plenary / invited talks</li>
+                <li>Conference dinner at Sternbräu Salzburg</li>
+              </ul>
+            </div>
           </div>
-      </div>
-      <div class="container p-5">
-          <h1 class="display-6">Program</h1>
-          <div class="container mt-3 p-2">
-              <p class="fs-6">The scientific program will feature the 2026 Wald Lecture (Tilmann Gneiting), the 
-              2026 Blackwell Lecture (to be named) , three 2026 Medallion Lectures (Ian McKeague, Bodhisattva Sen, Jelle Goeman), the IMS Lawrence D. Brown Ph.D.Student Awards, and more than 60 invited and contributed sessions.<br><br>
-              Details will be announced here in due course - stay tuned!<br><br>
-              Thank you for the many invited session proposals which we have received. Session organizers have been notified, and accepted presenters may now go ahead and register for the conference. Session organizers will soon receive a link for abstract submission and share with presenters in their respective session. Please note that you can only submit your abstract after having registered for the conference.
-<br><br>
 
-              Those whose presentation was not accepted in an <b>invited session</b> may still go ahead, register, and submit their presentation as a <b>contributed talk</b>. Please follow the links on the top right, first registering for the conference, and then submitting title and abstract of your talk.<br><br>
- 
-
-
-
-              </p>
-             
-            
+          <div class="col-md-6">
+            <div class="program-day h-100">
+              <h3 class="program-day-title">Day 2 – Saturday, July 11, 2026</h3>
+              <ul class="clean-list mb-0">
+                <li>Plenary / invited talks</li>
+                <li>Closing remarks</li>
+              </ul>
             </div>
-
-          <h1 class="display-6">Session Plan</h1> 
-
-
-<section class="container my-5">
-  <div class="schedule-wrap">
-    <div class="schedule-grid">
-
-      <!-- Header row -->
-      <div class="cell corner"></div>
-      <div class="cell day-head">Monday</div>
-      <div class="cell day-head">Tuesday</div>
-      <div class="cell day-head">Wednesday</div>
-      <div class="cell day-head">Thursday</div>
-
-      <!-- 09:00–10:00 -->
-      <div class="cell time">09:00–10:00</div>
-      <div class="cell slot">Opening &amp; Wald Lecture</div>
-      <div class="cell slot">Keynote 3</div>
-      <div class="cell slot">RSS Session &amp; Parallel Contributed Sessions</div>
-      <div class="cell slot">Keynote 5</div>
-
-      <!-- 10:00–10:30 (Break) -->
-      <div class="cell time break-time">10:00–10:30</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-
-      <!-- 10:30–12:00 -->
-      <div class="cell time">10:30–12:00</div>
-      <div class="cell slot">10 Parallel Invited Sessions (1)</div>
-      <div class="cell slot">10 Parallel Invited Sessions (3)</div>
-      <div class="cell slot">10 Parallel Invited Sessions (5)</div>
-      <div class="cell slot">Invited Session</div>
-
-      <!-- 12:00–14:00 (Lunch) -->
-      <div class="cell time break-time">12:00–14:00</div>
-      <div class="cell slot break">Lunch Break</div>
-      <div class="cell slot break">Lunch Break</div>
-      <div class="cell slot break">Lunch Break</div>
-      <div class="cell slot break">Lunch Break</div>
-
-      <!-- 14:00–15:30 -->
-      <div class="cell time">14:00–15:30</div>
-      <div class="cell slot">10 Parallel Invited Sessions (2)</div>
-      <div class="cell slot">10 Parallel Invited Sessions (4)</div>
-      <div class="cell slot">10 Parallel Invited Sessions (6)</div>
-      <div class="cell slot">Closing (until 15:00)</div>
-
-      <!-- 15:30–16:00 (Break) -->
-      <div class="cell time break-time">15:30–16:00</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot break">Coffee / Tea Break</div>
-      <div class="cell slot empty">—</div>
-
-      <!-- 16:00–17:00 -->
-      <div class="cell time">16:00–17:00</div>
-      <div class="cell slot">Keynote 2</div>
-      <div class="cell slot">Keynote 4</div>
-      <div class="cell slot">10 Parallel Invited Sessions (7)</div>
-      <div class="cell slot empty">—</div>
-
-      <!-- 17:00–18:00 -->
-      <div class="cell time">17:00–18:00</div>
-      <div class="cell slot">New Researchers Group Session &amp; Contributed Session</div>
-      <div class="cell slot">IMS PhD Student Brown Award &amp; Contributed Session (until 17:30)</div>
-      <div class="cell slot empty">—</div>
-      <div class="cell slot empty">—</div>
-
-      <!-- 19:00+ -->
-      <div class="cell time">19:00+</div>
-      <div class="cell slot evening">IMS Presidential Address, Award Ceremony &amp; Reception</div>
-      <div class="cell slot empty">—</div>
-      <div class="cell slot evening">Conference Banquet Dinner (extra ticket required)</div>
-      <div class="cell slot empty">—</div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-      </div>
-      
-  </section>
-
-  
-
-
-    <section id="footer" class="bg-primary text-light">
-        <div class="container">
-          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-4">
-            
-            <!-- لوگو سمت چپ -->
-            <div class="order-1 order-md-1 mb-3 mb-md-0">
-              <a href="https://www.plus.ac.at/?lang=en">
-                <img src="images/uni-sbg-logo-white.jpg"
-                     alt="University Logo"
-                     class="footer-logo img-fluid"
-                     style="height: 40px;">
-              </a>
-            </div>
-    
-            <!-- متن دقیقا وسط، با margin: auto -->
-            <div class="order-2 order-md-2 text-center mx-auto">
-              <!--<small>
-                <a href="https://www.plus.ac.at/?lang=en" class="text-decoration-none text-light">
-                  Paris Lodron University of Salzburg
-                </a>
-              </small>
-              <br>-->
-              <small>
-                <a href="https://www.salzburg.info/en/b2b/galleryhistorical-old-city-of-salzburg_image-280676"
-                   class="text-decoration-none text-light">
-                  Photo credit: Tourismus Salzburg
-                </a>
-              </small>
-            </div>
-    
-            <!-- فضای خالی یا المان سوم اگه خواستی -->
-            <div class="order-3 d-none d-md-block" style="width: 120px;"></div>
-    
           </div>
         </div>
-  </section>
-      
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script>
-  function showInvitedInfo() {
-    alert('Invited speakers will receive the submission information by email.');
-  }
-</script>
+      
+      </div>
+    </section>
+    <!-- Confirmed invited speakers -->
+    <section class="mb-5">
+      <h2 class="section-title text-center">Confirmed invited speakers</h2>
+
+      <div class="row g-4 mt-1">
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.cs.cas.cz/staff/bilkova/en"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Marta Bilkova
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Czech Academy of Sciences</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.uni-bremen.de/fb3/fachbereich/gesichter-des-fachbereiches/thorsten-dickhaus"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Thorsten Dickhaus
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Bremen</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.plus.ac.at/philosophie-gw-fakultaet/der-fachbereich-2/personal/philip-ebert/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Philip Ebert
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Salzburg</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.jku.at/institut-fuer-angewandte-statistik/ueber-uns/team/dr-markus-hainy-mstat/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Markus Hainy
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Linz</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://stat.duke.edu/research/hoff"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Peter Hoff
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Duke</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://cla.umn.edu/about/directory/profile/galin"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Galin Jones
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Minnesota</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.imst1.ovgu.de/Arbeitsgruppe/Prof_+Dr_+Claudia+Kirch-p-40.html"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Claudia Kirch
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Magdeburg</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://statistics.rutgers.edu/people-pages/faculty/people/395-john-kolassa"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                John Kolassa
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">NSF, Rutgers</p>
+          </div>
+        </div>
+      
+            
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://biometrie.charite.de/metas/person/person/address_detail/prof_dr_frank_konietschke"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Frank Konietschke
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Charité</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.researchgate.net/profile/Daniel-Krpelik"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Daniel Krpelik
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Ostrava</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.stat.cmu.edu/~mkuusela/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Mikael Kuusela
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Carnegie Mellon</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://cla.umn.edu/about/directory/profile/tianxili"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Tianxi Li
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Minnesota</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.stat.purdue.edu/people/faculty/fmliang.html"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Faming Liang 
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Purdue</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://philosophy.ucdavis.edu/people/hanti-lin"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Hanti Lin
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Davis</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://stt.msu.edu/users/maiti/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Tapabrata Maiti
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">NSF, Michigan State</p>
+          </div>
+        </div>
+            
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://statistics.fas.harvard.edu/people/xiao-li-meng"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Xiao-Li Meng
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Harvard</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.jku.at/institut-fuer-philosophie-und-wissenschaftstheorie/ueber-uns/unser-team/william-peden/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                William Peden 
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Linz</p>
+          </div>
+        </div>
+             
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/daniel-roy"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Dan Roy 
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Toronto</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.sdstate.edu/directory/christopher-saunders"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Christopher P. Saunders 
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">South Dakota State</p>
+          </div>
+        </div>
+         
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.unige.ch/gsem/fr/recherche/corps-professoral/honoraires/maria-pia-victoria-feser/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Maria-Pia Victoria-Feser
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Geneve</p>
+          </div>
+        </div>
+              
+        <div class="col-sm-6 col-lg-4">
+          <div class="committee-card h-100">
+            <a href="https://www.plus.ac.at/aihi/der-fachbereich/team/dr-georg-zimmermann-ba-msc/"
+                target="_blank"
+                class="member-link">
+                <p class="member-name mb-1">
+                Georg Zimmermann
+                </p>
+            </a>
+            <p class="member-affiliation mb-0">Salzburg</p>
+          </div>
+        </div>
+      
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Footer Start -->
+
+<footer class="site-footer mt-5">
+  <div class="container py-3 text-center">
+
+    <p class="footer-copy mb-0">
+    Draft website prepared for internal review
+    </p>
+
+  </div>
+</footer>
+
+<!-- Footer End -->
 </body>
 </html>
