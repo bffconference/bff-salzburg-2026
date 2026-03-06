@@ -520,3 +520,30 @@ body.internal-page {
   font-weight:400;
   border-radius:999px;
 }
+
+.registration-table{
+  font-size:0.95rem;
+}
+
+.registration-table th{
+  font-weight:600;
+  letter-spacing:0.3px;
+}
+
+.registration-table td{
+  padding:10px;
+}
+
+.registration-table thead{
+  background:#f8f9fa;
+}
+
+.registration-table tbody tr:hover{
+  background:#f5f5f5;
+}
+
+.poster-btn{
+  padding:10px 22px;
+  font-weight:500;
+  border-radius:999px;
+}
