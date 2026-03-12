@@ -675,29 +675,88 @@ body.internal-page {
   border-radius:999px;
 }
 
-.registration-table{
-  font-size:0.95rem;
-}
 
-.registration-table th{
-  font-weight:600;
-  letter-spacing:0.3px;
-}
-
-.registration-table td{
-  padding:10px;
-}
-
-.registration-table thead{
-  background:#f8f9fa;
-}
-
-.registration-table tbody tr:hover{
-  background:#f5f5f5;
-}
 
 .poster-btn{
   padding:10px 22px;
   font-weight:500;
   border-radius:999px;
+}
+
+
+
+.registration-table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: #fafcfb;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem; 
+}
+
+.registration-table thead th {
+  background-color: #f8fbfa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.75rem 0.6rem;   
+  vertical-align: bottom;
+  font-weight: 600;
+  color: #111;
+}
+
+.registration-table tbody td {
+  padding: 0.8rem 0.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  vertical-align: middle;
+}
+
+.registration-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.category-col {
+  width: 36%;
+}
+
+.fee-heading {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.fee-date {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.category-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.35;
+}
+
+.category-note {
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: #6c757d;
+  line-height: 1.45;
+}
+
+.fee-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+}
+
+.registration-table tbody tr:hover {
+  background-color: #fafcfb;
+}
+
+.registration-table tbody tr:hover {
+  background-color: transparent;
 }
