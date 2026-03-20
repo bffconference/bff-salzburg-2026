@@ -252,7 +252,28 @@ body.internal-page {
 .clean-list li:last-child{
   border-bottom: none;
 }
+/* کارت ویژه plenary */
 
+
+/* اسم کمی قوی‌تر */
+.plenary-card .member-name{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+.plenary-badge{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  background: rgba(0,153,112,0.12);
+  color: #009970;
+}
 .committee-card{
   background: #fff;
   border-radius: 16px;
