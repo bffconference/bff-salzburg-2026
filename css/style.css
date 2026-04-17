@@ -367,7 +367,6 @@ body.internal-page {
 .site-footer{
   background:#f7f8fa;
   color:#1f2933;
-  
   border-top:1px solid rgba(0,0,0,0.08);
   box-shadow:0 -6px 18px rgba(0,0,0,0.04);
 }
@@ -377,11 +376,8 @@ body.internal-page {
 }
 
 /* Top layout */
-.footer-grid{
-  display:grid;
-  grid-template-columns: 1.1fr 1fr 1fr;
-  gap:0;
-  align-items:start;
+.footer-top{
+  margin-bottom:0;
 }
 
 .footer-block{
@@ -394,15 +390,7 @@ body.internal-page {
 }
 
 /* Typography */
-.footer-eyebrow{
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:1.1px;
-  text-transform:uppercase;
-  color:#6b7280;
-}
-
-.footer-heading{
+.footer-title{
   font-size:22px;
   font-weight:650;
   line-height:1.2;
@@ -417,7 +405,7 @@ body.internal-page {
 }
 
 /* Host logo */
-.footer-host-link{
+.footer-host{
   display:inline-block;
   text-decoration:none;
 }
@@ -427,6 +415,7 @@ body.internal-page {
   max-width:100%;
   height:auto;
   display:block;
+  opacity:0.96;
 }
 
 /* Contact links */
@@ -465,6 +454,7 @@ body.internal-page {
   align-items:center;
   justify-content:space-between;
   gap:24px;
+  flex-wrap:wrap;
 }
 
 .footer-credit{
@@ -477,55 +467,73 @@ body.internal-page {
   font-weight:600;
 }
 
-.footer-endorsement{
+/* Supporters */
+.footer-supporters{
   display:flex;
   align-items:center;
-  gap:14px;
-  text-decoration:none;
-  transition:opacity 0.2s ease, transform 0.2s ease;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
-.footer-endorsement:hover{
-  opacity:0.9;
-  transform:translateY(-1px);
-}
-
-.footer-endorsement-text{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-  text-align:right;
-  line-height:1.25;
-}
-
-.footer-endorsement-label{
-  font-size:11px;
+.footer-supporters-label{
+  font-size:10px;
   font-weight:700;
-  letter-spacing:0.8px;
+  letter-spacing:1px;
   text-transform:uppercase;
-  color:#6b7280;
+  color:#7b8794;
+  white-space:nowrap;
 }
 
-.footer-endorsement-name{
-  font-size:13px;
-  color:#374151;
-  max-width:220px;
+.footer-supporters-logos{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
 }
 
-.footer-endorsement-logo{
-  width:60px;
-  height:auto;
+.footer-supporter-link{
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+  transition:transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-supporter-link:hover{
+  transform:translateY(-1px);
+  opacity:0.95;
+}
+
+.footer-supporter-logo{
   display:block;
-  flex-shrink:0;
+  width:auto;
+  max-height:44px;
+  object-fit:contain;
+  opacity:0.9;
+  filter:saturate(0.95);
 }
 
+/* Individual logo sizing */
+.plus-logo{
+  max-height:44px;
+}
+
+.academy-logo{
+  max-height:42px;
+}
+
+.rutgers-logo{
+  max-height:28px;
+}
+
+.nestat-logo{
+  max-height:30px;
+}
+.footer-supporters-logos{
+  align-items: center;
+}
 /* Tablet */
 @media (max-width: 991.98px){
-  .footer-grid{
-    grid-template-columns: 1fr;
-    gap:28px;
-  }
-
   .footer-block{
     padding:0;
     text-align:center;
@@ -537,10 +545,6 @@ body.internal-page {
     padding-bottom:24px;
   }
 
-  .footer-host-link{
-    display:inline-block;
-  }
-
   .footer-social{
     align-items:center;
   }
@@ -548,20 +552,17 @@ body.internal-page {
   .footer-bottom{
     flex-direction:column;
     text-align:center;
+    gap:18px;
   }
 
-  .footer-endorsement{
+  .footer-supporters{
+    justify-content:center;
     flex-direction:column;
-    gap:10px;
+    gap:12px;
   }
 
-  .footer-endorsement-text{
-    align-items:center;
-    text-align:center;
-  }
-
-  .footer-endorsement-name{
-    max-width:none;
+  .footer-supporters-logos{
+    justify-content:center;
   }
 }
 
@@ -571,7 +572,7 @@ body.internal-page {
     max-width:92%;
   }
 
-  .footer-heading{
+  .footer-title{
     font-size:19px;
     margin-bottom:14px;
   }
@@ -585,45 +586,28 @@ body.internal-page {
     width:160px;
   }
 
-  .footer-bottom{
-    margin-top:28px;
-    padding-top:16px;
-    gap:18px;
-  }
-
   .footer-credit{
     font-size:12px;
   }
 
-  .footer-endorsement-logo{
-    width:54px;
+  .footer-supporter-logo{
+    max-height:36px;
   }
 
-  .footer-endorsement-name{
-    font-size:12px;
+  .plus-logo{
+    max-height:42px;
   }
-}
-.footer-host-logo{
-  opacity:0.96;
-}
-.footer-endorsement-logo{
-  filter: saturate(0.95);
-}
-@media (max-width:768px){
-  .footer-grid{
-    grid-template-columns:1fr;
-    gap:28px;
+
+  .academy-logo{
+    max-height:44px;
   }
-  .footer-block{
-    text-align:center;
-    border-right:none !important;
-    border-bottom:1px solid rgba(0,0,0,0.08);
-    padding-bottom:22px;
+
+  .rutgers-logo{
+    max-height:28px;
   }
-  .footer-bottom{
-    flex-direction:column;
-    gap:18px;
-    text-align:center;
+
+  .nestat-logo{
+    max-height:34px;
   }
 }
 
