@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body class="internal-page">
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -35,6 +36,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="accommodation.html">Accommodation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="committee.html">Committee</a>
@@ -73,97 +77,289 @@
       </div>
     </section>
 
-    <section class="mb-5">
-  <div class="info-card session-format-card">
-    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <h2 class="section-title mb-0">Session Format</h2>
-    </div>
 
-    <div class="row g-4 mt-2">
-      <div class="col-md-6">
-        <div class="format-block h-100">
-          <h3 class="mini-title mb-2">Invited Sessions</h3>
-          <ul class="clean-list mb-0">
-            <li><strong>3 talks</strong> per invited session</li>
-            <li><strong>Total session length:</strong> 75 minutes</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="format-block h-100">
-          <h3 class="mini-title mb-2">Keynote Lectures</h3>
-          <ul class="clean-list mb-0">
-            <li><strong>Duration:</strong> 45 minutes each</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
     <!-- Tentative structure -->
     <section class="mb-5">
-      <div class="info-card">
-        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-          <h2 class="section-title mb-0">Tentative daily structure</h2>
-          <small class="text-muted">Preliminary – subject to change</small>
-        </div>
+  <div class="info-card">
 
-        <div class="row g-4 mt-3">
-          <div class="col-md-6">
-            <div class="program-day h-100">
-              <h3 class="program-day-title">Day 1 – Friday, July 10, 2026</h3>
-              <ul class="clean-list mb-0">
-                <li>Welcome and opening remarks</li>
-                <li>Plenary / invited talks / poster session</li>
-                <li>Conference dinner at Sternbräu Salzburg with banquet speech by <a href="https://people.math.ethz.ch/~buhlmann/" target="_blank" class="external-link" style="text-decoration: none;">Peter Bühlmann</a></li>
-              </ul>
-            </div>
-          </div>
+    <div class="schedule-header mb-4">
+      <h2 class="section-title mb-1">Tentative Conference Schedule</h2>
+      <p class="text-muted mb-0">Subject to change</p>
+    </div>
 
-          <div class="col-md-6">
-            <div class="program-day h-100">
-              <h3 class="program-day-title">Day 2 – Saturday, July 11, 2026</h3>
-              <ul class="clean-list mb-0">
-                <li>Plenary / invited talks</li>
-                <li>Closing remarks</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      
+    <!-- Day 1 -->
+    <div class="schedule-table-block mb-5">
+      <div class="schedule-day-title">
+        <span>July 10, 2026</span>
+        <span>08:00 – 18:00</span>
       </div>
-    </section>
-    <section class="mb-5">
-  <div class="info-card text-center">
 
-    <h2 class="section-title">Poster Submissions</h2>
+      <div class="table-responsive">
+        <table class="table schedule-table align-middle mb-0">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Type</th>
+              <th>Session</th>
+              <th>Details</th>
+            </tr>
+          </thead>
 
-    <p class="mb-3">
-      Poster submissions for the 10th BFF Conference are now open. 
-      We welcome poster presentations on topics related to statistics,
-      data science, machine learning, and AI, particularly those connected
-      to uncertainty quantification and statistical foundations.
-    </p>
+          <tbody>
+            <tr>
+              <td class="schedule-time-col">08:00 – 10:00</td>
+              <td><span class="schedule-badge neutral">Registration</span></td>
+              <td>Registration</td>
+              <td>Rolling</td>
+            </tr>
 
-    <p class="mb-4">
-      <strong>Poster submission deadline:</strong> May 30, 2026
-    </p>
+            <tr>
+              <td class="schedule-time-col">08:20 – 08:30</td>
+              <td><span class="schedule-badge opening">Opening</span></td>
+              <td>Opening Remarks</td>
+              <td>10 min</td>
+            </tr>
 
-    <a href="mailto:bff10.submission@gmail.com"
-       class="btn btn-success poster-btn">
-       Submit a Poster abstract
-    </a>
+            <tr class="schedule-highlight">
+              <td class="schedule-time-col">08:30 – 09:20</td>
+              <td><span class="schedule-badge keynote">Keynote</span></td>
+              <td>Opening Keynote</td>
+              <td>45 min talk + 5 min Q&amp;A · Keynote Speaker 1</td>
+            </tr>
 
-    <p class="mt-3 text-muted mb-0">
-      Please send the abstract of your poster to the email address above.
-      Notifications of acceptance will be sent on a rolling basis.
-    </p>
+            <tr>
+              <td class="schedule-time-col">09:20 – 09:30</td>
+              <td><span class="schedule-badge break">Break</span></td>
+              <td>Break</td>
+              <td>10 min</td>
+            </tr>
+
+           <tr>
+  <td class="schedule-time-col">09:30 – 10:45</td>
+
+  <td>
+    <span class="schedule-badge session">Session</span>
+  </td>
+
+  <td>
+    Session 1
+  </td>
+
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker A · Speaker B · Speaker C</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">10:45 – 11:00</td>
+              <td><span class="schedule-badge coffee">Coffee</span></td>
+              <td>Coffee Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">11:00 – 12:15</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 2</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker D · Speaker E · Speaker F</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">12:15 – 12:25</td>
+              <td><span class="schedule-badge poster">Poster</span></td>
+              <td>Poster Flash Talks</td>
+              <td>Approx. 1 min each</td>
+            </tr>
+
+            <tr>
+              <td class="schedule-time-col">12:25 – 12:30</td>
+              <td><span class="schedule-badge neutral">Transition</span></td>
+              <td>Transition</td>
+              <td>5 min</td>
+            </tr>
+
+            <tr>
+              <td class="schedule-time-col">12:30 – 13:20</td>
+              <td><span class="schedule-badge lunch">Lunch</span></td>
+              <td>Lunch</td>
+              <td>50 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">13:20 – 14:35</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 3</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker G · Speaker H · Speaker I</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">14:35 – 14:50</td>
+              <td><span class="schedule-badge coffee">Coffee</span></td>
+              <td>Coffee Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">14:50 – 16:05</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 4</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker J · Speaker K · Speaker L</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">16:05 – 16:20</td>
+              <td><span class="schedule-badge break">Break</span></td>
+              <td>Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">16:20 – 17:35</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 5</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker M · Speaker N · Speaker O</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">17:35 – 18:00</td>
+              <td><span class="schedule-badge neutral">Networking</span></td>
+              <td>Buffer / Informal Networking</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="schedule-table-block">
+      <div class="schedule-day-title">
+        <span>July 11, 2026</span>
+        <span>08:30 – 17:00</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table schedule-table align-middle mb-0">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Type</th>
+              <th>Session</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="schedule-time-col">08:30 – 09:30</td>
+              <td><span class="schedule-badge neutral">Registration</span></td>
+              <td>Registration</td>
+              <td>—</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">08:30 – 09:45</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 6</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker P · Speaker Q · Speaker R</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">09:45 – 10:00</td>
+              <td><span class="schedule-badge coffee">Coffee</span></td>
+              <td>Coffee Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">10:00 – 11:15</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 7</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker S · Speaker T · Speaker U</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">11:15 – 11:30</td>
+              <td><span class="schedule-badge break">Break</span></td>
+              <td>Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">11:30 – 12:45</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 8</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker V · Speaker W · Speaker X</div>
+  </td>
+</tr>
+
+            <tr>
+              <td class="schedule-time-col">12:45 – 13:35</td>
+              <td><span class="schedule-badge lunch">Lunch</span></td>
+              <td>Lunch</td>
+              <td>50 min</td>
+            </tr>
+
+            <tr class="schedule-highlight">
+              <td class="schedule-time-col">13:35 – 14:25</td>
+              <td><span class="schedule-badge keynote">Keynote</span></td>
+              <td>Keynote 2</td>
+              <td>45 min talk + 5 min Q&amp;A · Keynote Speaker 2</td>
+            </tr>
+
+            <tr>
+              <td class="schedule-time-col">14:25 – 14:40</td>
+              <td><span class="schedule-badge break">Break</span></td>
+              <td>Break</td>
+              <td>15 min</td>
+            </tr>
+
+            <tr>
+  <td class="schedule-time-col">14:40 – 15:55</td>
+  <td><span class="schedule-badge session">Session</span></td>
+  <td>Session 9</td>
+  <td>
+    <div class="session-meta">3 × 25 min (each includes talk &amp; Q&amp;A)</div>
+    <div>Speaker Y · Speaker Z · Speaker AA</div>
+  </td>
+</tr>
+
+            <tr class="schedule-highlight-soft">
+              <td class="schedule-time-col">15:55 – 17:00</td>
+              <td><span class="schedule-badge closing">Closing</span></td>
+              <td>Closing Panel / Discussion</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
   </div>
-    </section>
+</section>
+
     <!-- Confirmed invited speakers -->
     <section class="mb-5">
       <h2 class="section-title text-center">Confirmed invited speakers</h2>
@@ -558,7 +754,43 @@
 
   </div>
 </footer>
+<div class="modal fade" id="posterPasswordModal" tabindex="-1" aria-labelledby="posterPasswordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content password-modal">
 
+      <div class="modal-header">
+        <h5 class="modal-title" id="posterPasswordModalLabel">Poster Submission Access</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="password-modal-text">
+          Please enter the password to access the poster abstract submission page.
+        </p>
+
+        <input type="password"
+               id="posterPasswordInput"
+               class="form-control"
+               placeholder="Enter password">
+
+        <p id="passwordError" class="password-error mt-2 mb-0 d-none">
+          Incorrect password. Please try again.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+
+        <button type="button" class="btn btn-success" onclick="checkPosterPassword()">
+          Continue
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- Footer End -->
 </body>
