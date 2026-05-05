@@ -962,3 +962,10 @@ body.internal-page {
     min-width: 760px;
   }
 }
+
+.conference-meta{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
