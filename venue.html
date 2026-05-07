@@ -1,327 +1,276 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue | 10th BFF Conference</title>
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<body class="internal-page">
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand me-auto" href="https://www.bff-stat.org/">
-  <img src="photo-bff/BFF_logo.webp" alt="BFF Logo" class="img-fluid" style="max-height:45px;">
-</a>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-          </button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="index.html">Home</a>
+<body>
+<nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://imstat.org/" target="_blank" rel="noopener">
+      <img src="images/ims-logo.png" style="height: 40px;" alt="IMS">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="program.html" class="nav-link">Program</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="accommodation.html" class="nav-link">Accommodation</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="venue.html" class="nav-link">Venue</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="partners.html" class="nav-link">Partners</a>
+        </li>
+
+        <!-- ✅ Dropdown as a real nav item -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-cta-dd"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown"
+             data-bs-display="static"
+             aria-expanded="false">
+            Registration &amp; Submission
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/shop/2026-ims-annual-meeting/"
+                 target="_blank" rel="noopener">
+                Registration
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="conference.html">Conference</a>
+
+            <li>
+              <a class="dropdown-item"
+                 href="#"
+                 onclick="event.preventDefault(); showInvitedInfo();">
+                Invited talk submission
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="program.html">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" aria-current="page" href="venue.html">Venue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="accommodation.html">Accommodation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="committee.html">Committee</a>
+
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
+                 target="_blank" rel="noopener">
+                Contributed talk submission
+              </a>
             </li>
           </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+    <section class="bg-light">
+        <div class="container-fluid">
+            <div class="d-sm-flex">
+                <img class="img-fluid" src="images/Salzach_Festung_bruecken (2).jpg" alt="Festung_Salzach1">
+            </div>
         </div>
-      </div>
-      <a href="registration.html" class="login-button">Registration</a>
-      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
+        <div class="container p-5">
+            <h1 class="display-6">Venue and Directions</h1>
+            <div class="container mt-3 p-2">
+                <p class="fs-6">The Salzburg Congress will welcome IMS Annual Meeting 2026 visitors. The up-to-date conference location is situated in the very center of Salzburg, the city of Mozart. It has an unexpected view over the rooftops of Salzburg's old town, where the Mirabell Palace and the world-famous garden are to be seen, and the Mönchsberg and the Museum of Modern Art. The venue's location is the best, with a five-minute walk to tourist sites, ample beautiful shopping and walking areas, and the classic coffee houses. Salzburg Congress has emerged as one of Austria's leading congress centers in recent years. Each congress room is named after a renowned Salzburg citizen who was renowned for their contributions in areas like music, science, medicine, and literature, which helped establish the city's international reputation.</p>
+            </div><br>
 
-  <header class="page-hero">
-    <div class="container text-white text-center">
-      <h1 class="page-title">Venue</h1>
-      <p class="page-subtitle mb-0">
-        NaWi – University of Salzburg · Lecture Hall 402 (Blue Auditorium)
-      </p>
-    </div>
-  </header>
+            <h1 class="display-6">Location guidance & Route Organizer</h1>
+            <div class="container mt-3 p-2">
+        
+                <p class="fs-6 mb-1">IMS Meeting 2026 venue’s address: Salzburg Congress Auerspergstraße 6, (Entrance: Kurpark/Mirabellgarten), 5020 Salzburg, Österreich.<br><br>
+                <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+                <script>
+                    // مختصات Salzburg Congress:
+                    var map = L.map('map').setView([47.807261, 13.041412], 17); // مختصات و زوم
 
-  <main class="container my-5">
-    <!-- Quick facts -->
-    <section class="mb-5">
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="info-card h-100">
-            <h2 class="section-title">Address</h2>
-            <p class="mb-2">
-              NaWi (University of Salzburg)<br>
-              Hellbrunner Str. 34<br>
-              5020 Salzburg, Austria
+                    // لایه نقشه از OpenStreetMap:
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; OpenStreetMap contributors'
+                    }).addTo(map);
+
+                    // اضافه کردن Marker
+                    L.marker([47.807261, 13.041412])
+                        .addTo(map)
+                        .bindPopup('<b>Salzburg Congress</b><br>Auerspergstraße 6')
+                        .openPopup();
+                    </script><br>
+                    
+                <p class="fs-6 mb-1"><a class="text-decoration-none" href="https://salzburg-verkehr.at/en/" target="_blank">Public transportation website</a> provides information on the the <a class="text-decoration-none" href="https://maps.app.goo.gl/38djmNAi4WpdaDgv5" target="_blank">route planner</a>, duration of travel and costs of the ticket.</p><br>
+                
+            
+                <p class="fs-6 mb-1"><strong>Arrival by Air</strong></p>
+                <p class="ps-3 mb-3">
+                    Salzburg W. A. Mozart Airport is only four kilometers from the city center, a fifteen-minute taxi or public transportation ride. Direct travel from the airport to Salzburg Congress is available on bus line 2.<br>
+                    <a href="https://www.salzburg.info/en/travel-info/arrival-traffic/airplane" target="_blank" class="text-decoration-none">find details here</a>
+                </p>
+            
+                <p class="fs-6 mb-1"><strong>Arrival by train</strong></p>
+                <p class="ps-3 mb-3">
+                    Salzburg Congress is 5 minutes away by foot from Salzburg train station. The centre of the city is 15 minutes away by foot from here. In addition, you can also use regional train or S-Bahn from some of the nearby cities to reach Salzburg. You can reach the conference centre by lines 1, 2, 3, 5, 6, 25, and 840 from the train station.<br>
+                    <a href="https://www.salzburg.info/en/travel-info/arrival-traffic/train" target="_blank" class="text-decoration-none">find details here</a>
+                </p>
+
+                <p class="fs-6 mb-1"><strong>Arrival by car</strong></p>
+                <p class="ps-3 mb-3">
+                    Salzburg is the hub of the European motorway network: the A1 Vienna-Salzburg, the A8 Munich-Salzburg, and the A10 Villach-Salzburg meet in Salzburg. Don't forget to purchase a vignette for Austrian motorways when traveling to Salzburg. Parking is situated in the vicinity of the Salzburg Congress.<br>
+                    <a href="https://www.salzburg.info/en/travel-info/arrival-traffic/car" target="_blank" class="text-decoration-none">find details here</a>
+                </p><br>
+
+            <h2 class="mb-3" style=" font-size: 1.5rem;">Salzburg Tourist Information</h2>
+
+            
+
+            <div class="ps-2" style=" font-size: 0.95rem;">
+            <p class="mb-3">
+                📍 <a href="https://www.salzburg.info/de/reiseinfos/tourist-info/mozartplatz" target="_blank" class="text-decoration-none">
+                Tourist Info – Mozartplatz
+                </a><br>
+                Mozartplatz 5<br>
+                5020 Salzburg<br>
+                Tel.: +43 662 88987 330<br>
+                <a class="text-decoration-none" href="https://www.openstreetmap.org/?mlat=47.79744&mlon=13.04638#map=19/47.79744/13.04638" target="_blank">
+                View on OpenStreetMap
+                </a>
             </p>
 
-            <div class="d-flex gap-2 flex-wrap mt-3">
-              <!-- Replace query with exact pin later if you want -->
-              <a class="btn btn-outline-success"
-                 target="_blank"
-                 href="https://www.google.com/maps/search/?api=1&query=NaWi+University+of+Salzburg+Hellbrunner+Str.+34+Salzburg">
-                Open in Google Maps
-              </a>
+            <p>
+                📍 <a href="https://www.salzburg.info/de/reiseinfos/tourist-info/bahnhof" target="_blank" class="text-decoration-none">
+                Tourist Info – Salzburg Central Station
+                </a><br>
+                Südtiroler Platz 1<br>
+                5020 Salzburg<br>
+                Tel.: +43 662 88987 340<br>
+                <a class="text-decoration-none" href="https://www.openstreetmap.org/?mlat=47.81318&mlon=13.04563#map=19/47.81318/13.04563" target="_blank">
+                View on OpenStreetMap
+                </a>
+            </p>
+            </div>
+    
+        
+            <!--<h1 class="display-6">Salzburg Tourist Information</h1>
+            <div class="container mt-3 p-2">
+                <p class="fs-6 mb-1"><a class="text-decoration-none" href="https://www.salzburg.info/de/reiseinfos/tourist-info/mozartplatz">Tourist Info – Mozartplatz Mozartplatz</a>
+                    <br>Mozartplatz 5
+                    <br>5020 Salzburg
+                    <br>Tel.: +43662 88987 330
+                </p><br>
+                <p class="fs-6"><a class="text-decoration-none" href="https://www.salzburg.info/de/reiseinfos/tourist-info/bahnhof">Tourist Info – Salzburg Central Station</a>
+                    <br>Südtiroler Platz 1
+                    <br> 5020 Salzburg
+                    <br>Tel.: +43662 88987 340
+                </p>
+            </div>-->
+            
+        </div>
+            <!--<div class="container mt-3 p-2">
+                <p class="fs-6"><strong>Address:</strong> Salzburg Congress<br>
+                Auerspergstraße 6 (Entrance: Kurpark/Mirabellgarten),<br>
+                5020 Salzburg, Österreich.<br>
+                <a href="https://www.google.com/maps/place/Salzburg+Congress/" target="_blank">Google Maps: Salzburg Congress</a></p>
+                <h3 class="display-6 mb-4">Arrival by Air</h3>
+                <p class="fs-6">
+                <a href="#">Check here for details</a><br>
+                 Salzburg’s W. A. Mozart Airport is located just four kilometers from the city center, a fifteen-minute ride by taxi or public transport. Salzburg Congress can be reached directly from the airport by bus line 2.
+                </p>
 
-              <!-- Official venue page (adjust URL if you have a better official page) -->
-              <a class="btn btn-outline-dark"
-                 target="_blank"
-                 href="https://www.plus.ac.at/">
-                University Website
-              </a>
+                <h3 class="display-6">Arrival by Train</h3>
+                <p class="fs-6">
+                <a href="#">Check here for details</a><br>
+                The Salzburg train station is a five-minute walk from the Salzburg Congress. The city centre is a 15-minute walk away. From most cities in the region, you can also take the regional train or S-Bahn to Salzburg. The conference centre can be reached from the train station by lines 1, 2, 3, 5, 6, 25 and 840.
+                </p>
+
+                <h3 class="display-6">Arrival by Car</h3>
+                <p class="fs-6">
+                <a href="#">Check here for details</a><br>
+                Salzburg is the centre of the European motorway network: the A1 Vienna-Salzburg, the A8 Munich-Salzburg and the A10 Villach-Salzburg converge in Salzburg. Please remember to buy a vignette for Austrian motorways when you drive to Salzburg. Parking is possible in the immediate vicinity of the Salzburg Congress.
+                </p>
+            </div>-->
+        
+    </section>
+
+
+      
+        <!-- فوتر -->
+    <section id="footer" class="bg-primary text-light">
+          <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-4">
+              
+              <!-- لوگو سمت چپ -->
+              <div class="order-1 order-md-1 mb-3 mb-md-0">
+                <a href="https://www.plus.ac.at/?lang=en">
+                  <img src="images/uni-sbg-logo-white.jpg"
+                       alt="University Logo"
+                       class="footer-logo img-fluid"
+                       style="height: 40px;">
+                </a>
+              </div>
+      
+              <!-- متن دقیقا وسط، با margin: auto -->
+              <div class="order-2 order-md-2 text-center mx-auto">
+                <!--<small>
+                  <a href="https://www.plus.ac.at/?lang=en" class="text-decoration-none text-light">
+                    Paris Lodron University of Salzburg
+                  </a>
+                </small>
+                <br>-->
+                <small>
+                  <a href="https://www.salzburg.info/en/b2b/galleryhistorical-old-city-of-salzburg_image-280676"
+                     class="text-decoration-none text-light">
+                    Photo credit: Tourismus Salzburg
+                  </a>
+                </small>
+                <div class="text-center pb-2">
+  <small style="font-size:11px; opacity:0.7;">
+    Website developed by Shamim Samimi
+  </small>
+</div>
+              </div>
+      
+              <!-- فضای خالی یا المان سوم اگه خواستی -->
+              <div class="order-3 d-none d-md-block" style="width: 120px;"></div>
+      
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="info-card h-100">
-            <h2 class="section-title">On-site Details</h2>
-            <ul class="clean-list mb-0">
-              <li><strong>Building:</strong> NaWi (University of Salzburg)</li>
-              <li><strong>Room:</strong> Lecture Hall 402</li>
-              <li><strong>Auditorium:</strong> “Blue Auditorium”</li>
-              <li><strong>Dates:</strong> July 10–11, 2026</li>
-            </ul>
-            <p class="text-muted mt-3 mb-0">
-              More navigation details (entrances, signage) can be added closer to the conference.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
-
-    <!-- Map -->
-<section class="mb-5">
-  <div class="info-card map-card">
-
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-      <h2 class="section-title mb-0">Map</h2>
-      <a 
-  href="https://www.openstreetmap.org/?mlat=47.788685&mlon=13.060610#map=17/47.788685/13.060610"
-  target="_blank"
-  class="map-link-btn">
-  Open in OpenStreetMap
-</a>
-    </div>
-
-    <p class="map-note mt-2 mb-0">
-      Venue location at NaWi, University of Salzburg.
-    </p>
-
-   <div class="ratio ratio-16x9 mt-3 map-frame-wrapper">
-  <iframe
-    src="https://www.openstreetmap.org/export/embed.html?bbox=13.056610%2C47.786685%2C13.064610%2C47.790685&layer=mapnik&marker=47.788685%2C13.060610"
-    loading="lazy"
-    style="border:0;"
-    title="NaWi – University of Salzburg map">
-  </iframe>
-</div>
-
-  </div>
-</section>
-
-    <!-- Getting there -->
-<section class="mb-5">
-  <div class="info-card">
-    <h2 class="section-title">Getting there</h2>
-
-    <div class="row g-4 mt-1">
-
-      <!-- Public transport -->
-      <div class="col-md-4">
-        <h3 class="mini-title">Public transport</h3>
-        <p class="mb-2">
-          Public transport is the recommended way to reach the NaWi building.
-          The venue is served by several city bus lines with stops within
-          walking distance.
-        </p>
-        <p class="mb-0">
-          You can use the following link to plan your trip via Google Maps:
-          <br>
-          <a href="https://www.google.com/maps/dir/Salzburg+Hbf,+S%C3%BCdtiroler+Platz+1,+5020+Salzburg/NaWi,+Hellbrunner+Str.+34,+5020+Salzburg"
-             target="_blank"
-             class="external-link">
-            Route to NaWi on Google Maps
-          </a>
-        </p>
-        <div class="venue-note">
-    <strong>Mobility ticket:</strong> Guests staying in Salzburg hotels receive
-    a complimentary mobility ticket, which allows free use of public transport
-    throughout the state of Salzburg during their stay.
-  </div>
-      </div>
-
-      <!-- From Salzburg Hbf -->
-      <div class="col-md-4">
-        <h3 class="mini-title">From Salzburg Hbf (Main Station)</h3>
-        <p class="mb-2">
-          From Salzburg Central Station, the NaWi building can typically be
-          reached in about 15–25 minutes using public transport, depending on
-          the chosen connection.
-        </p>
-        <p class="mb-0">
-          Common options include taking a city bus towards the south of
-          Salzburg and getting off at a stop near Hellbrunner Straße, followed
-          by a short walk (approximately 5–10 minutes) to the NaWi building.
-          Exact routes and schedules may vary, so we recommend checking
-          current connections via:
-          <br>
-          <a href="https://www.google.com/maps/dir/Salzburg+Hbf,+S%C3%BCdtiroler+Platz+1,+5020+Salzburg/NaWi,+Hellbrunner+Str.+34,+5020+Salzburg"
-             target="_blank"
-             class="external-link">
-            Salzburg Hbf → NaWi (Google Maps directions)
-          </a>
-        </p>
-      </div>
-
-      <!-- By car & accessibility -->
-      <div class="col-md-4">
-        <h3 class="mini-title">By car & accessibility</h3>
-        <p class="mb-2">
-          The NaWi building can be accessed by car via Hellbrunner Straße
-          (Hellbrunner Str. 34, 5020 Salzburg). Parking directly at the
-          building and in the surrounding area is limited, and availability
-          may vary during the conference days.
-        </p>
-        <p class="mb-0">
-          The NaWi building is equipped with step-free access at the main
-          entrance and elevators inside the building, providing barrier-free
-          access to lecture halls such as Lecture Hall 402 (“Blue Auditorium”).
-          Further accessibility details can be provided on request.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <!-- Accessibility -->
-    <section class="mb-5">
-      <div class="info-card">
-        <h2 class="section-title">Accessibility</h2>
-        <p class="mb-0">
-          If you have any questions regarding accessibility, please contact the conference chairs.
-        </p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="text-center">
-      <div class="info-card">
-        <h2 class="section-title">Questions?</h2>
-        <p class="mb-3">
-          For venue-related questions, you can contact the conference chairs.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITx"
-          crossorigin="anonymous"></script>
-
-  <!-- Footer Start -->
-
-<footer class="site-footer mt-5">
-  <div class="container footer-container py-4">
-
-    <div class="footer-top row gy-4 text-center text-md-start justify-content-center">
-
-      <!-- Host -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Host</h6>
-        <a href="https://idalab.at/" target="_blank" class="footer-host">
-          <img src="photo-bff/Sublogo-IDA-Lab.png" alt="IDA Lab Salzburg" class="footer-host-logo">
-        </a>
-      </div>
-
-      <!-- Address -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Address</h6>
-        <p class="footer-text mb-0">
-          Jakob-Haringer-Straße 6<br>
-          Techno 6<br>
-          5020 Salzburg<br>
-          Austria
-        </p>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Contact</h6>
-        <div class="footer-social">
-          <a href="mailto:arne.bathke@plus.ac.at" class="footer-item">
-            <i class="bi bi-envelope"></i>
-            <span>Email</span>
-          </a>
-
-          <a href="https://www.linkedin.com/company/ida-lab-salzburg/" target="_blank" class="footer-item">
-            <i class="bi bi-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-
-          <a href="https://idalab.at/" target="_blank" class="footer-item">
-            <i class="bi bi-globe"></i>
-            <span>Website</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-credit">
-        Website developed by <span class="credit-name">Shamim Samimi</span>
-      </div>
-
-      <div class="footer-supporters">
-        <span class="footer-supporters-label">Supported by</span>
-
-        <div class="footer-supporters-logos">
-          <a href="https://www.plus.ac.at/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/UNI_LOGO_Vektor_RGB_01.png" alt="Paris Lodron University of Salzburg" class="footer-supporter-logo plus-logo">
-          </a>
-
-          <a href="https://euro-acad.eu/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/Logo_Emblem.png" alt="European Academy of Sciences and Arts" class="footer-supporter-logo academy-logo">
-          </a>
-
-          <a href="https://www.rutgers.edu/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/rutgers-logo.png" alt="Rutgers University" class="footer-supporter-logo rutgers-logo">
-          </a>
-
-          <a href="https://nestat.org/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/nestat.png" alt="New England Statistical Society" class="footer-supporter-logo nestat-logo">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-
-<!-- Footer End -->        
+    
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+  function showInvitedInfo() {
+    alert('Invited speakers will receive the submission information by email.');
+  }
+</script>
 </body>
 </html>

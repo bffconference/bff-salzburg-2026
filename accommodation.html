@@ -1,327 +1,199 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue | 10th BFF Conference</title>
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<body class="internal-page">
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand me-auto" href="https://www.bff-stat.org/">
-  <img src="photo-bff/BFF_logo.webp" alt="BFF Logo" class="img-fluid" style="max-height:45px;">
-</a>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-          </button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="index.html">Home</a>
+<body>
+<nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://imstat.org/" target="_blank" rel="noopener">
+      <img src="images/ims-logo.png" style="height: 40px;" alt="IMS">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="program.html" class="nav-link">Program</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="accommodation.html" class="nav-link">Accommodation</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="venue.html" class="nav-link">Venue</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="partners.html" class="nav-link">Partners</a>
+        </li>
+
+        <!-- ✅ Dropdown as a real nav item -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-cta-dd"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown"
+             data-bs-display="static"
+             aria-expanded="false">
+            Registration &amp; Submission
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/shop/2026-ims-annual-meeting/"
+                 target="_blank" rel="noopener">
+                Registration
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="conference.html">Conference</a>
+
+            <li>
+              <a class="dropdown-item"
+                 href="#"
+                 onclick="event.preventDefault(); showInvitedInfo();">
+                Invited talk submission
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="program.html">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="venue.html">Venue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" aria-current="page" href="accommodation.html">Accommodation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="committee.html">Committee</a>
+
+            <li>
+              <a class="dropdown-item"
+                 href="https://imstat.org/2026-ims-annual-meeting/contributed-talk-submission/"
+                 target="_blank" rel="noopener">
+                Contributed talk submission
+              </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <a href="registration.html" class="login-button">Registration</a>
-      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
+        </li>
 
-  <header class="page-hero">
-    <div class="container text-white text-center">
-      <h1 class="page-title">Accommodation</h1>
-      <p class="page-subtitle mb-0">
-        Accommodation
-            Hotels, travel options, and practical information for your stay in Salzburg
-      </p>
-    </div>
-  </header>
-
-  <main class="container my-5">
-
-
-
-<section class="mb-5">
-  <div class="info-card">
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-      <h2 class="section-title mb-0">Nearby Hotels</h2>
-      <span class="hotel-note-label">For convenience only</span>
-    </div>
-
-    <p class="text-muted mt-3 mb-4 hotel-disclaimer">
-      The following hotels are listed only as options in the vicinity of NaWi.
-      The conference does not make any particular recommendation, and participants
-      are kindly asked to arrange and book their accommodation individually.
-    </p>
-
-    <div class="row g-4">
-      <div class="col-md-6 col-xl-3">
-        <div class="hotel-card h-100">
-          <h3 class="mini-title mb-2">ARCOTEL Castellani</h3>
-          <p class="mb-3">
-            A well-known hotel in southern Salzburg, with relatively convenient
-            access to the conference venue.
-          </p>
-          <a href="https://castellani.arcotel.com/en/" target="_blank" class="external-link">
-            Visit hotel website
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xl-3">
-        <div class="hotel-card h-100">
-          <h3 class="mini-title mb-2">Motel One Salzburg-Süd</h3>
-          <p class="mb-3">
-            A modern option in the south of Salzburg, suitable for participants
-            looking for simple access to NaWi.
-          </p>
-          <a href="https://www.motel-one.com/en/hotels/salzburg/hotel-salzburg-sued/" target="_blank" class="external-link">
-            Visit hotel website
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xl-3">
-        <div class="hotel-card h-100">
-          <h3 class="mini-title mb-2">JUFA Hotel Salzburg City</h3>
-          <p class="mb-3">
-            A practical accommodation option with good access to the city and
-            the conference venue.
-          </p>
-          <a href="https://www.jufahotels.com/en/hotel/salzburg-city/" target="_blank" class="external-link">
-            Visit hotel website
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xl-3">
-        <div class="hotel-card h-100">
-          <h3 class="mini-title mb-2">Hotel Via Roma</h3>
-          <p class="mb-3">
-            A smaller hotel option in Salzburg, also located reasonably close
-            to the NaWi area.
-          </p>
-          <a href="https://www.hotelviaroma.com/" target="_blank" class="external-link">
-            Visit hotel website
-          </a>
-        </div>
-      </div>
+      </ul>
     </div>
   </div>
-</section>
+</nav>
 
-<!--recommendation area-->
-<section class="mb-5">
-  <div class="info-card">
-    <h2 class="section-title">Recommended Areas to Stay</h2>
+    
+    <section class="bg-light">
+        <div class="container-fluid">
+            <div class="d-sm-flex">
+                <img class="img-fluid" src="images/Salzach_Festung_bruecken (2).jpg" alt="Festung_Salzach1">
+            </div>
+        </div>
+        <div class="container p-5">
+            <h1 class="display-6">Accommodation</h1>
+            <div class="container mt-3 p-2">
+                <p class="fs-6">
+                IMS2026 organizers do not manage any hotel reservations. All reservations must be booked directly with the hotels and paid for by the guests themselves.<br><br>
 
-    <ul class="clean-list mb-0">
-      <li><strong>City Centre / Altstadt:</strong> close to restaurants, historic sites, and cultural attractions.</li>
-      <li><strong>Main Station Area:</strong> convenient for participants arriving by train.</li>
-      <li><strong>South Salzburg / NaWi Area:</strong> closest to the conference venue.</li>
-    </ul>
-  </div>
-</section>
+                Kindly manage your hotel reservations well in advance, as the city of Salzburg is a very popular tourist destination. On the plus side, there are accommodation possibilities at every level of comfort, and many are within walking distance of our conference site Salzburg Congress.</p><br>
+                
 
+            </div>
+            <h2 class="mb-3" style=" font-size: 1.5rem;">Hotel Reservation</h2>
+            <div class="container mt-3 p-2">
+                <p class="fs-6">
+                We kindly ask you to make your room reservation in good time <span style="color: red;">(by June 4, 2026 at the latest)</span> via the following hotel booking link:<br>
+                <a href="https://www.salzburgcongress.at/en/Quickfinder-TOSC5/2026/qf-scims_en" target="_blank" class="text-decoration-none">https://www.salzburgcongress.at/en/Quickfinder-TOSC5/2026/qf-scims-EN</a><br><br>
+                
 
-<section class="mb-5">
-  <div class="info-card">
-    <h2 class="section-title">Flights to Salzburg</h2>
+            </div>
+            <h2 class="mb-3" style=" font-size: 1.5rem;">Group enquiries (5 rooms or more) or enquiries beyond the quota period</h2>
+            <div class="container mt-3 p-2">
+                <p class="fs-6">
+                We kindly ask you to make your enquiry in good time <span style="color: red;">(by June 4, 2026 at the latest)</span> via the following link:<br>
+                <a href="https://www.salzburgcongress.at/en/Congress-Services/Room-Inquiries" target="_blank" class="text-decoration-none">https://www.salzburgcongress.at/en/Congress-Services/Room-Inquiries</a><br><br>
+                
 
-    <p class="mb-3">
-      Salzburg Airport (SZG) offers direct flights to selected European destinations.
-      Availability may vary depending on the season and airline schedules.
-    </p>
+            </div>
+            <p class="fs-6" style="text-decoration: underline;"><b>If you have any questions, please contact us directly:</b></p>
+            <div class="ps-2" style=" font-size: 0.95rem;">
+                <p class="mb-3">📍<b>Salzburg Congress / Congress Services</b>
+                    <br>
+                    Auerspergstraße 6<br>
+                    5020 Salzburg<br>
+                    E-Mail: <a href="https://mail.google.com/mail/?view=cm&to=service@salzburgcongress.at" target="_blank" style="text-decoration: none;">
+                    service@salzburgcongress.at
+                    </a><br>
 
-    <p class="mb-0">
-      Participants travelling from overseas may also consider flying to Munich or Vienna,
-      both of which offer a wider range of convenient train connections to Salzburg.
-    </p>
-  </div>
-</section>
+                    Tel.: +43-662 88987-603/-604/-605<br>
+                
+        
+                </p>
 
-<section class="mb-5">
-  <div class="info-card">
-    <h2 class="section-title">Travel via Munich or Vienna</h2>
+            </div><br>
+            <h2 class="mb-3" style=" font-size: 1.5rem;">Childcare</h2>
+            <div class="container mt-3 p-2">
+                <p class="fs-6">
+                Regarding childcare, please note the IMS childcare initiative:<br>
+                <a href="https://imstat.org/meetings/ims-child-care-initiative/" target="_blank" class="text-decoration-none">https://imstat.org/meetings/ims-child-care-initiative/</a><br><br>
+                
 
-    <p class="mb-4">
-      For participants travelling from the United States or other overseas destinations,
-      Munich Airport and Vienna International Airport are convenient alternatives.
-      From both airports, Salzburg can be reached comfortably by train.
-    </p>
-
-    <div class="row g-4">
-      <div class="col-md-6">
-        <h3 class="mini-title">Via Munich Airport</h3>
-        <p class="mb-2">
-          Munich Airport offers many international flight connections. Salzburg can
-          usually be reached by train via Munich Central Station.
-        </p>
-        <p class="text-muted mb-0">
-          Approximate travel time: 1.5–2 hours.
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <h3 class="mini-title">Via Vienna Airport</h3>
-        <p class="mb-2">
-          Vienna International Airport is another convenient option, with frequent
-          rail connections to Salzburg through the Austrian railway network.
-        </p>
-        <p class="text-muted mb-0">
-          Approximate travel time: 2.5–3 hours.
-        </p>
-      </div>
-    </div>
-
-    <div class="venue-note mt-4">
-      <strong>Tip:</strong> Salzburg is well connected by train from both Munich and Vienna.
-      These airports may offer more flexible international flight options than Salzburg Airport.
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mb-5">
-  <div class="info-card">
-    <h2 class="section-title">Booking Advice</h2>
-
-    <p class="mb-3">
-      July is a popular travel season in Salzburg. Participants are therefore encouraged
-      to book accommodation early.
-    </p>
-
-    <p class="mb-0">
-      Hotels in the city centre, near the main station, or in the southern part of Salzburg
-      usually provide convenient access to the conference venue.
-    </p>
-  </div>
-</section>
-
-
-    <!-- CTA -->
-    <section class="text-center">
-      <div class="info-card">
-        <h2 class="section-title">Questions?</h2>
-        <p class="mb-3">
-          For venue-related questions, you can contact the conference chairs.
-        </p>
-      </div>
+            </div>
+        
     </section>
-  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITx"
-          crossorigin="anonymous"></script>
-
-  <!-- Footer Start -->
-
-<footer class="site-footer mt-5">
-  <div class="container footer-container py-4">
-
-    <div class="footer-top row gy-4 text-center text-md-start justify-content-center">
-
-      <!-- Host -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Host</h6>
-        <a href="https://idalab.at/" target="_blank" class="footer-host">
-          <img src="photo-bff/Sublogo-IDA-Lab.png" alt="IDA Lab Salzburg" class="footer-host-logo">
-        </a>
-      </div>
-
-      <!-- Address -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Address</h6>
-        <p class="footer-text mb-0">
-          Jakob-Haringer-Straße 6<br>
-          Techno 6<br>
-          5020 Salzburg<br>
-          Austria
-        </p>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-4 footer-block">
-        <h6 class="footer-title">Contact</h6>
-        <div class="footer-social">
-          <a href="mailto:arne.bathke@plus.ac.at" class="footer-item">
-            <i class="bi bi-envelope"></i>
-            <span>Email</span>
-          </a>
-
-          <a href="https://www.linkedin.com/company/ida-lab-salzburg/" target="_blank" class="footer-item">
-            <i class="bi bi-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-
-          <a href="https://idalab.at/" target="_blank" class="footer-item">
-            <i class="bi bi-globe"></i>
-            <span>Website</span>
-          </a>
+    <section id="footer" class="bg-primary text-light">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-4">
+            
+            <!-- لوگو سمت چپ -->
+            <div class="order-1 order-md-1 mb-3 mb-md-0">
+              <a href="https://www.plus.ac.at/?lang=en">
+                <img src="images/uni-sbg-logo-white.jpg"
+                     alt="University Logo"
+                     class="footer-logo img-fluid"
+                     style="height: 40px;">
+              </a>
+            </div>
+    
+            <!-- متن دقیقا وسط، با margin: auto -->
+            <div class="order-2 order-md-2 text-center mx-auto">
+              <!--<small>
+                <a href="https://www.plus.ac.at/?lang=en" class="text-decoration-none text-light">
+                  Paris Lodron University of Salzburg
+                </a>
+              </small>
+              <br>
+              <small>-->
+                <a href="https://www.salzburg.info/en/b2b/galleryhistorical-old-city-of-salzburg_image-280676"
+                   class="text-decoration-none text-light">
+                  Photo credit: Tourismus Salzburg
+                </a>
+              </small>
+              <div class="text-center pb-2">
+  <small style="font-size:11px; opacity:0.7;">
+    Website developed by Shamim Samimi
+  </small>
+</div>
+            </div>
+            
+    
+            <!-- فضای خالی یا المان سوم اگه خواستی -->
+            <div class="order-3 d-none d-md-block" style="width: 120px;"></div>
+    
+          </div>
         </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-credit">
-        Website developed by <span class="credit-name">Shamim Samimi</span>
-      </div>
-
-      <div class="footer-supporters">
-        <span class="footer-supporters-label">Supported by</span>
-
-        <div class="footer-supporters-logos">
-          <a href="https://www.plus.ac.at/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/UNI_LOGO_Vektor_RGB_01.png" alt="Paris Lodron University of Salzburg" class="footer-supporter-logo plus-logo">
-          </a>
-
-          <a href="https://euro-acad.eu/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/Logo_Emblem.png" alt="European Academy of Sciences and Arts" class="footer-supporter-logo academy-logo">
-          </a>
-
-          <a href="https://www.rutgers.edu/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/rutgers-logo.png" alt="Rutgers University" class="footer-supporter-logo rutgers-logo">
-          </a>
-
-          <a href="https://nestat.org/" target="_blank" class="footer-supporter-link">
-            <img src="photo-bff/nestat.png" alt="New England Statistical Society" class="footer-supporter-logo nestat-logo">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-
-<!-- Footer End -->        
+  </section>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+  function showInvitedInfo() {
+    alert('Invited speakers will receive the submission information by email.');
+  }
+</script>
 </body>
 </html>
