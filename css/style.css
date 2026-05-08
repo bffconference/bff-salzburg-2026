@@ -450,11 +450,11 @@ body.internal-page {
   margin-top:34px;
   padding-top:20px;
   border-top:1px solid rgba(15, 23, 42, 0.08);
+
   display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-  flex-wrap:wrap;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:18px;
 }
 
 .footer-credit{
@@ -473,7 +473,7 @@ body.internal-page {
   align-items:center;
   gap:18px;
   flex-wrap:wrap;
-  justify-content:flex-end;
+  justify-content:flex-start;
 }
 
 .footer-supporters-label{
@@ -528,6 +528,9 @@ body.internal-page {
 
 .nestat-logo{
   max-height:30px;
+}
+.new-logo{
+  max-height:34px !important;
 }
 .footer-supporters-logos{
   align-items: center;
@@ -609,6 +612,9 @@ body.internal-page {
   .nestat-logo{
     max-height:34px;
   }
+  .new-logo{
+  max-height:34px !important ;
+}
 }
 
 
