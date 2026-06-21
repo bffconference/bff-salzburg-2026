@@ -975,3 +975,31 @@ body.internal-page {
   letter-spacing: 1px;
   opacity: 0.85;
 }
+
+.footer-gold-sponsor{
+  margin-bottom:18px;
+}
+
+.footer-gold-label{
+  display:block;
+  margin-bottom:10px;
+
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  color:#b8860b;
+}
+
+.footer-gold-logo{
+  max-height:70px;
+  width:auto;
+  object-fit:contain;
+  display:block;
+}
+
+.footer-gold-logo{
+  max-height:70px;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.3));
+}
