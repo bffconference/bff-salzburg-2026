@@ -1033,3 +1033,9 @@ body.internal-page {
     margin:70px 0;
 }
 
+.session-chair{
+    margin-top:8px;
+    font-size:0.9rem;
+    color:#6b7280;
+    font-style:italic;
+}
